@@ -1,0 +1,36 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the deployment from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Specify the Python version you need
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Deploy to Hugging Face Space
+      env:
+        HF_USERNAME: ${{ secrets.HF_ID }}
+        HF_PASSWORD: ${{ secrets.HF_TOKEN }}
+      run: |
+        # Authenticate with Hugging Face
+        huggingface-cli login --username $HF_USERNAME --password $HF_PASSWORD
+
+        # Push the changes to the Hugging Face Space repo
+        git remote add huggingface https://huggingface.co/spaces/hwang2006/text-summarization-demo
+        git push huggingface main  # Ensure this is the correct branch for your space
