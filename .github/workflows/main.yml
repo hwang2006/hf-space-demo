@@ -25,11 +25,9 @@ jobs:
 
     - name: Deploy to Hugging Face Space
       env:
-        HF_USERNAME: ${{ secrets.HF_ID }}
-        HF_PASSWORD: ${{ secrets.HF_TOKEN }}
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: |
-        # Authenticate with Hugging Face
-        # huggingface-cli login --username $HF_USERNAME --password $HF_PASSWORD
+        # Authenticate with Hugging Face using the token
         huggingface-cli login --token $HF_TOKEN
 
         # Push the changes to the Hugging Face Space repo
