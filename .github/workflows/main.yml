@@ -29,7 +29,8 @@ jobs:
         HF_PASSWORD: ${{ secrets.HF_TOKEN }}
       run: |
         # Authenticate with Hugging Face
-        huggingface-cli login --username $HF_USERNAME --password $HF_PASSWORD
+        # huggingface-cli login --username $HF_USERNAME --password $HF_PASSWORD
+        huggingface-cli login --token $HF_TOKEN
 
         # Push the changes to the Hugging Face Space repo
         git remote add huggingface https://huggingface.co/spaces/hwang2006/text-summarization-demo
