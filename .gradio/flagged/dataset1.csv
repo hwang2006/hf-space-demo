@@ -1,0 +1,20 @@
+Input Text,Summary,timestamp
+"Principal Researcher & Former Director General, KISTI
+Professor, University of Science and Technology
+
+
+Soonwook Hwang is a Principal Researcher and former Director General at the National Supercomputing Center of the Korea Institute of Science and Technology Information (KISTI). He is also a Professor at the KISTI school of Data & High Performance Computing Science in the University of Science and Technology (UST). Dr. Hwang serves as a guest columnist for Joongdo Daily News, where he has been, since 2019, writing science columns primarily on the topics of Supercomputing, Data and Artificial Intelligence. You can find his op-ed articles here.
+
+As the Director General of KISTI’s National Supercomputing Center, he was in charge of the development of the KISTI-5 supercomputer, Nurion, in partership with Cray and Intel, playing a pivotal role in Nurion debuting the No. 11 spot on the Top500 supercomputers list in June, 2018.
+
+Since 2021, Dr. Hwang’s research focus has been on Natural Language Processing (NLP) and Large Language Model(LLM), and exploring large-scale distributed training practices including pre-training/fine-tuning LLMs on supercomputers, especially on National Supercomputing Facilities including KISTI in Korea and LBNL/NERSC in the U.S. For more details on his work, please visit his GitHub repositories here, which are intended to share and disseminate best practices for Distributed Deep Learning and Generative AI with LLMs on top of supercomputers including Perlmutter running SLURM as its workload manager.
+
+He joined KISTI in 2006 as a Chief Architect for Korea’s national e-Science project. As Team Leader or Head of Technology Development Department, He led the development and evolution of the AMGA Metadata catalog software which used to be a de facto grid metadata service. AMGA is still being exploited as a metadata service for data analytics in the Belle2 experiment, an international collaboration of about 1000 scientists worldwide in High Energy Physics hosted by KEK in Japan. He also led the design and development of the HTCaaS (High-Throughput Computing as a Service), a platform designed to support the execution of High-Throughput Computing (HTC) tasks at scale by efficiently harnessing available computing resources, such as supercomputers, grids, and clouds. There have been around 40 publications about the HTCaaS system in international conferences and journals.
+
+Before his tenure at KISTI, Dr. Hwang worked for the Japanese National Research Grid Initiative (NAREGI) from 2004 to 2006. NAREGI aims to develop grid middleware for a next-generation CyberScience infrastructure in Japan.
+
+Dr. Hwang received his Ph.D. in Computer Science from the University of Southern California (USC) in 2003 under the supervision of Prof. Carl Kesselman, a pioneer in grid computing and the creator of the Globus open-source toolkit. He also earned his B.S. and M.S. degrees in Mathematics and Computer Science from Seoul National University, Korea, respectively.
+
+Selected Projects
+AMGA Metadata Catalog Project
+HTCaaS (High Throughput Computing as a Service)"," Soonwook Hwang is a Principal Researcher and former Director General at the National Supercomputing Center of the Korea Institute of Science and Technology Information . He was in charge of the development of the KISTI-5 supercomputer, Nurion, in partership with Cray and Intel, playing a pivotal role in Nurion debuting the No. 11 spot on the Top500 supercomputers list .",2025-01-10 10:24:36.946227
