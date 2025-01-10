@@ -25,10 +25,15 @@ jobs:
 
     - name: Deploy to Hugging Face Space
       env:
+        HF_USERNAME: ${{ secrets.HF_ID}} 
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: |
-        # Authenticate with Hugging Face using the token
-        huggingface-cli login --token $HF_TOKEN
+        # Authenticate with Hugging Face using the token and add to git credential
+        huggingface-cli login --token $HF_TOKEN --add-to-git-credential
+        
+        # Set up the git credential helper
+        git config --global credential.helper store
+        echo "https://${HF_USERNAME}:${HF_TOKEN}@huggingface.co" > ~/.git-credentials
 
         # Push the changes to the Hugging Face Space repo
         git remote add huggingface https://huggingface.co/spaces/hwang2006/text-summarization-demo
